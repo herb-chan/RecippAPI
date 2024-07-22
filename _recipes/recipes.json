@@ -1,0 +1,256 @@
+[
+    {
+        "id": "1",
+        "title": "Spaghetti Carbonara",
+        "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+        "imagePath": "assets/images/spaghetti_carbonara.jpg",
+        "prepTime": "20 mins",
+        "servingSize": "2 servings",
+        "category": "Italian",
+        "steps": [
+            "Boil the pasta.",
+            "Cook the pancetta.",
+            "Mix eggs and cheese.",
+            "Combine pasta with pancetta and egg mixture."
+        ],
+        "allergies": ["Eggs", "Dairy"],
+        "diets": ["Vegetarian"]
+    },
+    {
+        "id": "2",
+        "title": "Chicken Alfredo",
+        "description": "Creamy Alfredo sauce with grilled chicken over fettuccine pasta.",
+        "imagePath": "assets/images/chicken_alfredo.jpg",
+        "prepTime": "30 mins",
+        "servingSize": "4 servings",
+        "category": "Italian",
+        "steps": [
+            "Cook the pasta.",
+            "Prepare the Alfredo sauce.",
+            "Grill the chicken.",
+            "Mix all together."
+        ],
+        "allergies": [],
+        "diets": []
+    },
+    {
+        "id": "3",
+        "title": "Pad Thai",
+        "description": "A popular Thai stir-fried noodle dish with tofu, peanuts, and tamarind sauce.",
+        "imagePath": "assets/images/pad_thai.jpg",
+        "prepTime": "25 mins",
+        "servingSize": "2 servings",
+        "category": "Thai",
+        "steps": [
+            "Soak rice noodles in water.",
+            "Prepare tofu and vegetables.",
+            "Stir-fry with tamarind sauce and peanuts.",
+            "Serve hot."
+        ],
+        "allergies": ["Peanuts"],
+        "diets": ["Vegetarian", "Vegan"]
+    },
+    {
+        "id": "4",
+        "title": "Beef Burger",
+        "description": "Classic American beef burger with lettuce, tomato, and cheese in a sesame seed bun.",
+        "imagePath": "assets/images/beef_burger.jpg",
+        "prepTime": "15 mins",
+        "servingSize": "1 serving",
+        "category": "American",
+        "steps": [
+            "Season ground beef with salt and pepper.",
+            "Grill or pan-fry until cooked through.",
+            "Assemble burger with lettuce, tomato, and cheese.",
+            "Serve with fries."
+        ],
+        "allergies": ["Dairy", "Gluten"],
+        "diets": []
+    },
+    {
+        "id": "5",
+        "title": "Margherita Pizza",
+        "description": "Traditional Italian pizza with tomato sauce, mozzarella cheese, and fresh basil.",
+        "imagePath": "assets/images/margherita_pizza.jpg",
+        "prepTime": "18 mins",
+        "servingSize": "1 pizza",
+        "category": "Italian",
+        "steps": [
+            "Roll out pizza dough.",
+            "Spread tomato sauce evenly.",
+            "Top with mozzarella cheese and fresh basil leaves.",
+            "Bake in a preheated oven until crust is golden."
+        ],
+        "allergies": ["Dairy", "Gluten"],
+        "diets": ["Vegetarian"]
+    },
+    {
+        "id": "6",
+        "title": "Sushi Rolls",
+        "description": "Japanese sushi rolls with sticky rice, seaweed, and various fillings like tuna and avocado.",
+        "imagePath": "assets/images/sushi_rolls.jpg",
+        "prepTime": "35 mins",
+        "servingSize": "4 rolls",
+        "category": "Japanese",
+        "steps": [
+            "Prepare sushi rice and fillings.",
+            "Lay seaweed sheet on bamboo mat.",
+            "Spread rice evenly, add fillings, and roll tightly.",
+            "Slice and serve with soy sauce and wasabi."
+        ],
+        "allergies": [],
+        "diets": []
+    },
+    {
+        "id": "7",
+        "title": "Chicken Tikka Masala",
+        "description": "Indian chicken curry with a creamy tomato sauce and fragrant spices.",
+        "imagePath": "assets/images/chicken_tikka_masala.jpg",
+        "prepTime": "40 mins",
+        "servingSize": "4 servings",
+        "category": "Indian",
+        "steps": [
+            "Marinate chicken in yogurt and spices.",
+            "Grill or bake chicken until cooked.",
+            "Simmer in tomato and cream sauce with spices.",
+            "Serve hot with rice or naan."
+        ],
+        "allergies": ["Dairy"],
+        "diets": []
+    },
+    {
+        "id": "8",
+        "title": "Caesar Salad",
+        "description": "Classic Caesar salad with romaine lettuce, croutons, Parmesan cheese, and Caesar dressing.",
+        "imagePath": "assets/images/caesar_salad.jpg",
+        "prepTime": "15 mins",
+        "servingSize": "2 servings",
+        "category": "American",
+        "steps": [
+            "Toss chopped romaine lettuce with Caesar dressing.",
+            "Add croutons and Parmesan cheese.",
+            "Mix well and serve chilled."
+        ],
+        "allergies": ["Dairy", "Gluten"],
+        "diets": ["Vegetarian"]
+    },
+    {
+        "id": "9",
+        "title": "Ratatouille",
+        "description": "French Provencal stewed vegetable dish with tomatoes, zucchini, eggplant, and bell peppers.",
+        "imagePath": "assets/images/ratatouille.jpg",
+        "prepTime": "45 mins",
+        "servingSize": "4 servings",
+        "category": "French",
+        "steps": [
+            "Slice vegetables thinly.",
+            "Sauté in olive oil until tender.",
+            "Layer vegetables in a baking dish with tomato sauce.",
+            "Bake until flavors meld together."
+        ],
+        "allergies": [],
+        "diets": ["Vegetarian", "Vegan"]
+    },
+    {
+        "id": "10",
+        "title": "Pho",
+        "description": "Vietnamese noodle soup with aromatic broth, rice noodles, and herbs, often served with beef or chicken.",
+        "imagePath": "assets/images/pho.jpg",
+        "prepTime": "3 hours",
+        "servingSize": "2 servings",
+        "category": "Vietnamese",
+        "steps": [
+            "Simmer broth with spices for several hours.",
+            "Cook rice noodles until tender.",
+            "Slice meat thinly and add to hot broth to cook.",
+            "Serve with herbs, lime, and chili."
+        ],
+        "allergies": [],
+        "diets": []
+    },
+    {
+        "id": "11",
+        "title": "Moussaka",
+        "description": "Greek dish with layers of eggplant, ground meat, and béchamel sauce, baked to perfection.",
+        "imagePath": "assets/images/moussaka.jpg",
+        "prepTime": "1 hour 30 mins",
+        "servingSize": "6 servings",
+        "category": "Greek",
+        "steps": [
+            "Slice and salt eggplant to remove bitterness.",
+            "Prepare meat sauce with ground beef and tomatoes.",
+            "Layer eggplant and meat sauce in baking dish.",
+            "Top with béchamel sauce and bake until golden brown."
+        ],
+        "allergies": ["Dairy"],
+        "diets": []
+    },
+    {
+        "id": "12",
+        "title": "Tacos",
+        "description": "Mexican tacos with seasoned meat, salsa, avocado, and cilantro on corn tortillas.",
+        "imagePath": "assets/images/tacos.jpg",
+        "prepTime": "30 mins",
+        "servingSize": "4 servings",
+        "category": "Mexican",
+        "steps": [
+            "Cook seasoned meat until browned and cooked through.",
+            "Warm corn tortillas on a skillet.",
+            "Fill tortillas with meat, salsa, avocado, and cilantro.",
+            "Serve with lime wedges."
+        ],
+        "allergies": ["Dairy"],
+        "diets": []
+    },
+    {
+        "id": "13",
+        "title": "Salmon Teriyaki",
+        "description": "Japanese grilled salmon with a sweet and savory teriyaki glaze.",
+        "imagePath": "assets/images/salmon_teriyaki.jpg",
+        "prepTime": "25 mins",
+        "servingSize": "2 servings",
+        "category": "Japanese",
+        "steps": [
+            "Marinate salmon fillets in teriyaki sauce.",
+            "Grill salmon until cooked through and caramelized.",
+            "Serve hot with steamed rice and vegetables."
+        ],
+        "allergies": [],
+        "diets": []
+    },
+    {
+        "id": "14",
+        "title": "Lasagna",
+        "description": "Classic Italian pasta dish with layers of pasta, meat sauce, and creamy cheese filling.",
+        "imagePath": "assets/images/lasagna.jpg",
+        "prepTime": "90 mins",
+        "servingSize": "6 servings",
+        "category": "Italian",
+        "steps": [
+            "Cook lasagna noodles until al dente.",
+            "Prepare meat sauce with ground beef and tomatoes.",
+            "Make creamy cheese filling with ricotta and mozzarella.",
+            "Layer lasagna noodles, meat sauce, and cheese filling.",
+            "Bake until bubbly and golden brown."
+        ],
+        "allergies": ["Dairy"],
+        "diets": ["Paleo"]
+    },
+    {
+        "id": "15",
+        "title": "Falafel Wrap",
+        "description": "Middle Eastern wrap with crispy falafel, fresh vegetables, and tahini sauce in a soft pita.",
+        "imagePath": "assets/images/falafel_wrap.jpg",
+        "prepTime": "40 mins",
+        "servingSize": "2 servings",
+        "category": "Middle Eastern",
+        "steps": [
+            "Prepare falafel mixture with chickpeas, herbs, and spices.",
+            "Form into balls and fry until crispy.",
+            "Warm pita bread and spread with tahini sauce.",
+            "Fill with falafel, vegetables, and additional sauce."
+        ],
+        "allergies": [],
+        "diets": ["Vegetarian", "Vegan", "Paleo"]
+    }
+]
