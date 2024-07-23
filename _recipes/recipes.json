@@ -14,7 +14,20 @@
             "Combine pasta with pancetta and egg mixture."
         ],
         "allergies": ["Eggs", "Dairy"],
-        "diets": ["Vegetarian"]
+        "diets": ["Vegetarian"],
+        "ingredients": [
+            { "name": "Spaghetti", "quantity": "200g" },
+            { "name": "Pancetta", "quantity": "100g" },
+            { "name": "Eggs", "quantity": "2" },
+            { "name": "Parmesan Cheese", "quantity": "50g" },
+            { "name": "Black Pepper", "quantity": "to taste" }
+        ],
+        "nutrition": {
+            "calories": 500,
+            "fat": "20g",
+            "carbs": "60g",
+            "protein": "20g"
+        }
     },
     {
         "id": "2",
@@ -31,7 +44,23 @@
             "Mix all together."
         ],
         "allergies": [],
-        "diets": []
+        "diets": [],
+        "ingredients": [
+            { "name": "Fettuccine", "quantity": "400g" },
+            { "name": "Chicken Breast", "quantity": "2" },
+            { "name": "Heavy Cream", "quantity": "1 cup" },
+            { "name": "Parmesan Cheese", "quantity": "100g" },
+            { "name": "Butter", "quantity": "50g" },
+            { "name": "Garlic", "quantity": "2 cloves" },
+            { "name": "Salt", "quantity": "to taste" },
+            { "name": "Pepper", "quantity": "to taste" }
+        ],
+        "nutrition": {
+            "calories": 800,
+            "fat": "45g",
+            "carbs": "70g",
+            "protein": "40g"
+        }
     },
     {
         "id": "3",
@@ -48,7 +77,25 @@
             "Serve hot."
         ],
         "allergies": ["Peanuts"],
-        "diets": ["Vegetarian", "Vegan"]
+        "diets": ["Vegetarian", "Vegan"],
+        "ingredients": [
+            { "name": "Rice Noodles", "quantity": "200g" },
+            { "name": "Tofu", "quantity": "150g" },
+            { "name": "Peanuts", "quantity": "50g" },
+            { "name": "Tamarind Paste", "quantity": "2 tbsp" },
+            { "name": "Soy Sauce", "quantity": "2 tbsp" },
+            { "name": "Bean Sprouts", "quantity": "100g" },
+            { "name": "Garlic", "quantity": "2 cloves" },
+            { "name": "Vegetable Oil", "quantity": "2 tbsp" },
+            { "name": "Lime", "quantity": "1" },
+            { "name": "Green Onions", "quantity": "2" }
+        ],
+        "nutrition": {
+            "calories": 600,
+            "fat": "20g",
+            "carbs": "80g",
+            "protein": "20g"
+        }
     },
     {
         "id": "4",
@@ -65,7 +112,22 @@
             "Serve with fries."
         ],
         "allergies": ["Dairy", "Gluten"],
-        "diets": []
+        "diets": [],
+        "ingredients": [
+            { "name": "Ground Beef", "quantity": "200g" },
+            { "name": "Lettuce", "quantity": "2 leaves" },
+            { "name": "Tomato", "quantity": "1 slice" },
+            { "name": "Cheddar Cheese", "quantity": "1 slice" },
+            { "name": "Sesame Seed Bun", "quantity": "1" },
+            { "name": "Salt", "quantity": "to taste" },
+            { "name": "Pepper", "quantity": "to taste" }
+        ],
+        "nutrition": {
+            "calories": 700,
+            "fat": "40g",
+            "carbs": "50g",
+            "protein": "30g"
+        }
     },
     {
         "id": "5",
@@ -82,7 +144,19 @@
             "Bake in a preheated oven until crust is golden."
         ],
         "allergies": ["Dairy", "Gluten"],
-        "diets": ["Vegetarian"]
+        "diets": ["Vegetarian"],
+        "ingredients": [
+            { "name": "Pizza Dough", "quantity": "200g" },
+            { "name": "Tomato Sauce", "quantity": "100g" },
+            { "name": "Mozzarella Cheese", "quantity": "100g" },
+            { "name": "Fresh Basil", "quantity": "5 leaves" }
+        ],
+        "nutrition": {
+            "calories": 600,
+            "fat": "25g",
+            "carbs": "70g",
+            "protein": "20g"
+        }
     },
     {
         "id": "6",
@@ -99,7 +173,21 @@
             "Slice and serve with soy sauce and wasabi."
         ],
         "allergies": [],
-        "diets": []
+        "diets": [],
+        "ingredients": [
+            { "name": "Sushi Rice", "quantity": "400g" },
+            { "name": "Nori Sheets", "quantity": "4" },
+            { "name": "Tuna", "quantity": "200g" },
+            { "name": "Avocado", "quantity": "1" },
+            { "name": "Soy Sauce", "quantity": "to taste" },
+            { "name": "Wasabi", "quantity": "to taste" }
+        ],
+        "nutrition": {
+            "calories": 500,
+            "fat": "10g",
+            "carbs": "80g",
+            "protein": "20g"
+        }
     },
     {
         "id": "7",
@@ -116,7 +204,28 @@
             "Serve hot with rice or naan."
         ],
         "allergies": ["Dairy"],
-        "diets": []
+        "diets": [],
+        "ingredients": [
+            { "name": "Chicken Breast", "quantity": "4" },
+            { "name": "Yogurt", "quantity": "1 cup" },
+            { "name": "Tomato Puree", "quantity": "400g" },
+            { "name": "Heavy Cream", "quantity": "1 cup" },
+            { "name": "Onion", "quantity": "1" },
+            { "name": "Garlic", "quantity": "4 cloves" },
+            { "name": "Ginger", "quantity": "1 inch" },
+            { "name": "Garam Masala", "quantity": "2 tbsp" },
+            { "name": "Turmeric", "quantity": "1 tsp" },
+            { "name": "Cumin", "quantity": "1 tsp" },
+            { "name": "Chili Powder", "quantity": "1 tsp" },
+            { "name": "Salt", "quantity": "to taste" },
+            { "name": "Oil", "quantity": "2 tbsp" }
+        ],
+        "nutrition": {
+            "calories": 700,
+            "fat": "40g",
+            "carbs": "30g",
+            "protein": "50g"
+        }
     },
     {
         "id": "8",
@@ -132,7 +241,19 @@
             "Mix well and serve chilled."
         ],
         "allergies": ["Dairy", "Gluten"],
-        "diets": ["Vegetarian"]
+        "diets": ["Vegetarian"],
+        "ingredients": [
+            { "name": "Romaine Lettuce", "quantity": "1 head" },
+            { "name": "Croutons", "quantity": "1 cup" },
+            { "name": "Parmesan Cheese", "quantity": "50g" },
+            { "name": "Caesar Dressing", "quantity": "1/2 cup" }
+        ],
+        "nutrition": {
+            "calories": 400,
+            "fat": "30g",
+            "carbs": "20g",
+            "protein": "10g"
+        }
     },
     {
         "id": "9",
@@ -149,14 +270,32 @@
             "Bake until flavors meld together."
         ],
         "allergies": [],
-        "diets": ["Vegetarian", "Vegan"]
+        "diets": ["Vegetarian", "Vegan"],
+        "ingredients": [
+            { "name": "Tomatoes", "quantity": "4" },
+            { "name": "Zucchini", "quantity": "2" },
+            { "name": "Eggplant", "quantity": "1" },
+            { "name": "Bell Peppers", "quantity": "2" },
+            { "name": "Olive Oil", "quantity": "2 tbsp" },
+            { "name": "Garlic", "quantity": "2 cloves" },
+            { "name": "Onion", "quantity": "1" },
+            { "name": "Herbes de Provence", "quantity": "1 tsp" },
+            { "name": "Salt", "quantity": "to taste" },
+            { "name": "Pepper", "quantity": "to taste" }
+        ],
+        "nutrition": {
+            "calories": 200,
+            "fat": "10g",
+            "carbs": "25g",
+            "protein": "5g"
+        }
     },
     {
         "id": "10",
         "title": "Pho",
         "description": "Vietnamese noodle soup with aromatic broth, rice noodles, and herbs, often served with beef or chicken.",
         "imagePath": "assets/images/pho.jpg",
-        "prepTime": "3",
+        "prepTime": "180",
         "servingSize": "2",
         "category": "Vietnamese",
         "steps": [
@@ -166,91 +305,24 @@
             "Serve with herbs, lime, and chili."
         ],
         "allergies": [],
-        "diets": []
-    },
-    {
-        "id": "11",
-        "title": "Moussaka",
-        "description": "Greek dish with layers of eggplant, ground meat, and béchamel sauce, baked to perfection.",
-        "imagePath": "assets/images/moussaka.jpg",
-        "prepTime": "90",
-        "servingSize": "6",
-        "category": "Greek",
-        "steps": [
-            "Slice and salt eggplant to remove bitterness.",
-            "Prepare meat sauce with ground beef and tomatoes.",
-            "Layer eggplant and meat sauce in baking dish.",
-            "Top with béchamel sauce and bake until golden brown."
+        "diets": [],
+        "ingredients": [
+            { "name": "Beef Broth", "quantity": "1.5L" },
+            { "name": "Rice Noodles", "quantity": "200g" },
+            { "name": "Beef Sirloin", "quantity": "200g" },
+            { "name": "Ginger", "quantity": "1 inch" },
+            { "name": "Cinnamon Stick", "quantity": "1" },
+            { "name": "Star Anise", "quantity": "2" },
+            { "name": "Fish Sauce", "quantity": "2 tbsp" },
+            { "name": "Lime", "quantity": "1" },
+            { "name": "Fresh Herbs", "quantity": "1 cup" },
+            { "name": "Chili", "quantity": "1" }
         ],
-        "allergies": ["Dairy"],
-        "diets": []
-    },
-    {
-        "id": "12",
-        "title": "Tacos",
-        "description": "Mexican tacos with seasoned meat, salsa, avocado, and cilantro on corn tortillas.",
-        "imagePath": "assets/images/tacos.jpg",
-        "prepTime": "30",
-        "servingSize": "4",
-        "category": "Mexican",
-        "steps": [
-            "Cook seasoned meat until browned and cooked through.",
-            "Warm corn tortillas on a skillet.",
-            "Fill tortillas with meat, salsa, avocado, and cilantro.",
-            "Serve with lime wedges."
-        ],
-        "allergies": ["Dairy"],
-        "diets": []
-    },
-    {
-        "id": "13",
-        "title": "Salmon Teriyaki",
-        "description": "Japanese grilled salmon with a sweet and savory teriyaki glaze.",
-        "imagePath": "assets/images/salmon_teriyaki.jpg",
-        "prepTime": "25",
-        "servingSize": "2",
-        "category": "Japanese",
-        "steps": [
-            "Marinate salmon fillets in teriyaki sauce.",
-            "Grill salmon until cooked through and caramelized.",
-            "Serve hot with steamed rice and vegetables."
-        ],
-        "allergies": [],
-        "diets": []
-    },
-    {
-        "id": "14",
-        "title": "Lasagna",
-        "description": "Classic Italian pasta dish with layers of pasta, meat sauce, and creamy cheese filling.",
-        "imagePath": "assets/images/lasagna.jpg",
-        "prepTime": "90",
-        "servingSize": "6",
-        "category": "Italian",
-        "steps": [
-            "Cook lasagna noodles until al dente.",
-            "Prepare meat sauce with ground beef and tomatoes.",
-            "Make creamy cheese filling with ricotta and mozzarella.",
-            "Layer lasagna noodles, meat sauce, and cheese filling.",
-            "Bake until bubbly and golden brown."
-        ],
-        "allergies": ["Dairy"],
-        "diets": ["Paleo"]
-    },
-    {
-        "id": "15",
-        "title": "Falafel Wrap",
-        "description": "Middle Eastern wrap with crispy falafel, fresh vegetables, and tahini sauce in a soft pita.",
-        "imagePath": "assets/images/falafel_wrap.jpg",
-        "prepTime": "40",
-        "servingSize": "2",
-        "category": "Middle Eastern",
-        "steps": [
-            "Prepare falafel mixture with chickpeas, herbs, and spices.",
-            "Form into balls and fry until crispy.",
-            "Warm pita bread and spread with tahini sauce.",
-            "Fill with falafel, vegetables, and additional sauce."
-        ],
-        "allergies": [],
-        "diets": ["Vegetarian", "Vegan", "Paleo"]
+        "nutrition": {
+            "calories": 400,
+            "fat": "10g",
+            "carbs": "50g",
+            "protein": "25g"
+        }
     }
 ]

@@ -26,6 +26,14 @@ const Recipe = sequelize.define("Recipe", {
         type: DataTypes.STRING,
         allowNull: false,
     },
+    ingredients: {
+        type: DataTypes.JSON,
+        allowNull: false,
+    },
+    nutrition: {
+        type: DataTypes.JSON,
+        allowNull: false,
+    },
     steps: {
         type: DataTypes.TEXT,
         allowNull: false,
