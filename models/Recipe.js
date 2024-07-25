@@ -35,34 +35,16 @@ const Recipe = sequelize.define("Recipe", {
         allowNull: false,
     },
     steps: {
-        type: DataTypes.TEXT,
+        type: DataTypes.JSON,
         allowNull: false,
-        get() {
-            return this.getDataValue("steps").split(";");
-        },
-        set(val) {
-            this.setDataValue("steps", val.join(";"));
-        },
     },
     allergies: {
-        type: DataTypes.TEXT,
+        type: DataTypes.JSON,
         allowNull: true,
-        get() {
-            return this.getDataValue("allergies").split(";");
-        },
-        set(val) {
-            this.setDataValue("allergies", val.join(";"));
-        },
     },
     diets: {
-        type: DataTypes.TEXT,
+        type: DataTypes.JSON,
         allowNull: true,
-        get() {
-            return this.getDataValue("diets").split(";");
-        },
-        set(val) {
-            this.setDataValue("diets", val.join(";"));
-        },
     },
     starCount: {
         type: DataTypes.INTEGER,
