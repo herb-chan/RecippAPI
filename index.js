@@ -12,6 +12,11 @@ const recipesFilePath = path.join(__dirname, "_recipes/recipes.json");
 
 recipp_app.use(express.json());
 
+/**
+ * Synchronizes recipes from the JSON file with the database.
+ * @async
+ * @function
+ */
 const syncRecipes = async () => {
     const recipesData = readRecipesFromFile();
     for (const recipeData of recipesData) {
@@ -49,18 +54,44 @@ sequelize.sync().then(async () => {
     console.log("Recipes data synchronized!");
 });
 
-// Basic route
+/**
+ * Basic route
+ * @name GET /
+ * @function
+ * @memberof module:recipp_app
+ * @inner
+ * @param {object} req Express request object
+ * @param {object} res Express response object
+ */
 recipp_app.get("/", (req, res) => {
     res.send("Hello, Recipp API!");
 });
 
-// Route to get all recipes (Read)
+/**
+ * Route to get all recipes
+ * @name GET /recipes
+ * @function
+ * @memberof module:recipp_app
+ * @inner
+ * @async
+ * @param {object} req Express request object
+ * @param {object} res Express response object
+ */
 recipp_app.get("/recipes", async (req, res) => {
     const recipes = await Recipe.findAll();
     res.json(recipes);
 });
 
-// Route to get a single recipe by ID (Read)
+/**
+ * Route to get a single recipe by ID
+ * @name GET /recipes/:id
+ * @function
+ * @memberof module:recipp_app
+ * @inner
+ * @async
+ * @param {object} req Express request object
+ * @param {object} res Express response object
+ */
 recipp_app.get("/recipes/:id", async (req, res) => {
     const recipe = await Recipe.findByPk(req.params.id);
     if (recipe) {
@@ -70,7 +101,16 @@ recipp_app.get("/recipes/:id", async (req, res) => {
     }
 });
 
-// Route to search for recipes by title
+/**
+ * Route to search for recipes by title
+ * @name GET /search
+ * @function
+ * @memberof module:recipp_app
+ * @inner
+ * @async
+ * @param {object} req Express request object
+ * @param {object} res Express response object
+ */
 recipp_app.get("/search", async (req, res) => {
     const query = req.query.q;
     const recipes = await Recipe.findAll({
@@ -83,7 +123,16 @@ recipp_app.get("/search", async (req, res) => {
     res.json(recipes);
 });
 
-// Route to star a recipe
+/**
+ * Route to star a recipe
+ * @name POST /recipes/:id/star
+ * @function
+ * @memberof module:recipp_app
+ * @inner
+ * @async
+ * @param {object} req Express request object
+ * @param {object} res Express response object
+ */
 recipp_app.post("/recipes/:id/star", async (req, res) => {
     const recipe = await Recipe.findByPk(req.params.id);
     if (recipe) {
@@ -111,12 +160,21 @@ recipp_app.listen(port, () => {
     console.log(`Recipp API server running at http://localhost:${port}`);
 });
 
-// Utility functions to read and write recipes.json
+/**
+ * Reads recipes from the JSON file.
+ * @function
+ * @returns {Array<Object>} An array of recipes.
+ */
 const readRecipesFromFile = () => {
     const data = fs.readFileSync(recipesFilePath);
     return JSON.parse(data);
 };
 
+/**
+ * Writes recipes to the JSON file.
+ * @function
+ * @param {Array<Object>} recipes An array of recipes.
+ */
 const writeRecipesToFile = (recipes) => {
     fs.writeFileSync(recipesFilePath, JSON.stringify(recipes, null, 2));
 };
