@@ -23,10 +23,30 @@
             { "name": "Black Pepper", "quantity": "to taste" }
         ],
         "nutrition": {
-            "calories": 500,
-            "fat": "20g",
-            "carbs": "60g",
-            "protein": "20g"
+            "calories": {
+                "name": "Calories",
+                "amount": 400,
+                "unit": "kcal",
+                "percentageDailyNeeds": 20
+            },
+            "fat": {
+                "name": "Fat",
+                "amount": 10,
+                "unit": "g",
+                "percentageDailyNeeds": 15
+            },
+            "carbs": {
+                "name": "Carbohydrates",
+                "amount": 50,
+                "unit": "g",
+                "percentageDailyNeeds": 17
+            },
+            "protein": {
+                "name": "Protein",
+                "amount": 25,
+                "unit": "g",
+                "percentageDailyNeeds": 50
+            }
         }
     },
     {
@@ -56,10 +76,30 @@
             { "name": "Pepper", "quantity": "to taste" }
         ],
         "nutrition": {
-            "calories": 800,
-            "fat": "45g",
-            "carbs": "70g",
-            "protein": "40g"
+            "calories": {
+                "name": "Calories",
+                "amount": 400,
+                "unit": "kcal",
+                "percentageDailyNeeds": 20
+            },
+            "fat": {
+                "name": "Fat",
+                "amount": 10,
+                "unit": "g",
+                "percentageDailyNeeds": 15
+            },
+            "carbs": {
+                "name": "Carbohydrates",
+                "amount": 50,
+                "unit": "g",
+                "percentageDailyNeeds": 17
+            },
+            "protein": {
+                "name": "Protein",
+                "amount": 25,
+                "unit": "g",
+                "percentageDailyNeeds": 50
+            }
         }
     },
     {
@@ -91,10 +131,30 @@
             { "name": "Green Onions", "quantity": "2" }
         ],
         "nutrition": {
-            "calories": 600,
-            "fat": "20g",
-            "carbs": "80g",
-            "protein": "20g"
+            "calories": {
+                "name": "Calories",
+                "amount": 400,
+                "unit": "kcal",
+                "percentageDailyNeeds": 20
+            },
+            "fat": {
+                "name": "Fat",
+                "amount": 10,
+                "unit": "g",
+                "percentageDailyNeeds": 15
+            },
+            "carbs": {
+                "name": "Carbohydrates",
+                "amount": 50,
+                "unit": "g",
+                "percentageDailyNeeds": 17
+            },
+            "protein": {
+                "name": "Protein",
+                "amount": 25,
+                "unit": "g",
+                "percentageDailyNeeds": 50
+            }
         }
     },
     {
@@ -123,10 +183,30 @@
             { "name": "Pepper", "quantity": "to taste" }
         ],
         "nutrition": {
-            "calories": 700,
-            "fat": "40g",
-            "carbs": "50g",
-            "protein": "30g"
+            "calories": {
+                "name": "Calories",
+                "amount": 400,
+                "unit": "kcal",
+                "percentageDailyNeeds": 20
+            },
+            "fat": {
+                "name": "Fat",
+                "amount": 10,
+                "unit": "g",
+                "percentageDailyNeeds": 15
+            },
+            "carbs": {
+                "name": "Carbohydrates",
+                "amount": 50,
+                "unit": "g",
+                "percentageDailyNeeds": 17
+            },
+            "protein": {
+                "name": "Protein",
+                "amount": 25,
+                "unit": "g",
+                "percentageDailyNeeds": 50
+            }
         }
     },
     {
@@ -152,10 +232,30 @@
             { "name": "Fresh Basil", "quantity": "5 leaves" }
         ],
         "nutrition": {
-            "calories": 600,
-            "fat": "25g",
-            "carbs": "70g",
-            "protein": "20g"
+            "calories": {
+                "name": "Calories",
+                "amount": 400,
+                "unit": "kcal",
+                "percentageDailyNeeds": 20
+            },
+            "fat": {
+                "name": "Fat",
+                "amount": 10,
+                "unit": "g",
+                "percentageDailyNeeds": 15
+            },
+            "carbs": {
+                "name": "Carbohydrates",
+                "amount": 50,
+                "unit": "g",
+                "percentageDailyNeeds": 17
+            },
+            "protein": {
+                "name": "Protein",
+                "amount": 25,
+                "unit": "g",
+                "percentageDailyNeeds": 50
+            }
         }
     },
     {
@@ -163,166 +263,52 @@
         "title": "Sushi Rolls",
         "description": "Japanese sushi rolls with sticky rice, seaweed, and various fillings like tuna and avocado.",
         "imagePath": "assets/images/sushi_rolls.jpg",
-        "prepTime": "35",
+        "prepTime": "40",
         "servingSize": "4",
         "category": "Japanese",
         "steps": [
-            "Prepare sushi rice and fillings.",
-            "Lay seaweed sheet on bamboo mat.",
-            "Spread rice evenly, add fillings, and roll tightly.",
-            "Slice and serve with soy sauce and wasabi."
+            "Prepare sushi rice.",
+            "Cut fillings (tuna, avocado, cucumber, etc.).",
+            "Roll with seaweed and rice using a bamboo mat.",
+            "Slice into pieces and serve with soy sauce."
         ],
-        "allergies": [],
+        "allergies": ["Fish"],
         "diets": [],
         "ingredients": [
-            { "name": "Sushi Rice", "quantity": "400g" },
-            { "name": "Nori Sheets", "quantity": "4" },
+            { "name": "Sushi Rice", "quantity": "300g" },
+            { "name": "Nori (Seaweed)", "quantity": "4 sheets" },
             { "name": "Tuna", "quantity": "200g" },
             { "name": "Avocado", "quantity": "1" },
+            { "name": "Cucumber", "quantity": "1" },
             { "name": "Soy Sauce", "quantity": "to taste" },
-            { "name": "Wasabi", "quantity": "to taste" }
+            { "name": "Wasabi", "quantity": "to taste" },
+            { "name": "Pickled Ginger", "quantity": "to taste" }
         ],
         "nutrition": {
-            "calories": 500,
-            "fat": "10g",
-            "carbs": "80g",
-            "protein": "20g"
-        }
-    },
-    {
-        "id": "7",
-        "title": "Chicken Tikka Masala",
-        "description": "Indian chicken curry with a creamy tomato sauce and fragrant spices.",
-        "imagePath": "assets/images/chicken_tikka_masala.jpg",
-        "prepTime": "40",
-        "servingSize": "4",
-        "category": "Indian",
-        "steps": [
-            "Marinate chicken in yogurt and spices.",
-            "Grill or bake chicken until cooked.",
-            "Simmer in tomato and cream sauce with spices.",
-            "Serve hot with rice or naan."
-        ],
-        "allergies": ["Dairy"],
-        "diets": [],
-        "ingredients": [
-            { "name": "Chicken Breast", "quantity": "4" },
-            { "name": "Yogurt", "quantity": "1 cup" },
-            { "name": "Tomato Puree", "quantity": "400g" },
-            { "name": "Heavy Cream", "quantity": "1 cup" },
-            { "name": "Onion", "quantity": "1" },
-            { "name": "Garlic", "quantity": "4 cloves" },
-            { "name": "Ginger", "quantity": "1 inch" },
-            { "name": "Garam Masala", "quantity": "2 tbsp" },
-            { "name": "Turmeric", "quantity": "1 tsp" },
-            { "name": "Cumin", "quantity": "1 tsp" },
-            { "name": "Chili Powder", "quantity": "1 tsp" },
-            { "name": "Salt", "quantity": "to taste" },
-            { "name": "Oil", "quantity": "2 tbsp" }
-        ],
-        "nutrition": {
-            "calories": 700,
-            "fat": "40g",
-            "carbs": "30g",
-            "protein": "50g"
-        }
-    },
-    {
-        "id": "8",
-        "title": "Caesar Salad",
-        "description": "Classic Caesar salad with romaine lettuce, croutons, Parmesan cheese, and Caesar dressing.",
-        "imagePath": "assets/images/caesar_salad.jpg",
-        "prepTime": "15",
-        "servingSize": "2",
-        "category": "American",
-        "steps": [
-            "Toss chopped romaine lettuce with Caesar dressing.",
-            "Add croutons and Parmesan cheese.",
-            "Mix well and serve chilled."
-        ],
-        "allergies": ["Dairy", "Gluten"],
-        "diets": ["Vegetarian"],
-        "ingredients": [
-            { "name": "Romaine Lettuce", "quantity": "1 head" },
-            { "name": "Croutons", "quantity": "1 cup" },
-            { "name": "Parmesan Cheese", "quantity": "50g" },
-            { "name": "Caesar Dressing", "quantity": "1/2 cup" }
-        ],
-        "nutrition": {
-            "calories": 400,
-            "fat": "30g",
-            "carbs": "20g",
-            "protein": "10g"
-        }
-    },
-    {
-        "id": "9",
-        "title": "Ratatouille",
-        "description": "French Provencal stewed vegetable dish with tomatoes, zucchini, eggplant, and bell peppers.",
-        "imagePath": "assets/images/ratatouille.jpg",
-        "prepTime": "45",
-        "servingSize": "4",
-        "category": "French",
-        "steps": [
-            "Slice vegetables thinly.",
-            "Sauté in olive oil until tender.",
-            "Layer vegetables in a baking dish with tomato sauce.",
-            "Bake until flavors meld together."
-        ],
-        "allergies": [],
-        "diets": ["Vegetarian", "Vegan"],
-        "ingredients": [
-            { "name": "Tomatoes", "quantity": "4" },
-            { "name": "Zucchini", "quantity": "2" },
-            { "name": "Eggplant", "quantity": "1" },
-            { "name": "Bell Peppers", "quantity": "2" },
-            { "name": "Olive Oil", "quantity": "2 tbsp" },
-            { "name": "Garlic", "quantity": "2 cloves" },
-            { "name": "Onion", "quantity": "1" },
-            { "name": "Herbes de Provence", "quantity": "1 tsp" },
-            { "name": "Salt", "quantity": "to taste" },
-            { "name": "Pepper", "quantity": "to taste" }
-        ],
-        "nutrition": {
-            "calories": 200,
-            "fat": "10g",
-            "carbs": "25g",
-            "protein": "5g"
-        }
-    },
-    {
-        "id": "10",
-        "title": "Pho",
-        "description": "Vietnamese noodle soup with aromatic broth, rice noodles, and herbs, often served with beef or chicken.",
-        "imagePath": "assets/images/pho.jpg",
-        "prepTime": "180",
-        "servingSize": "2",
-        "category": "Vietnamese",
-        "steps": [
-            "Simmer broth with spices for several hours.",
-            "Cook rice noodles until tender.",
-            "Slice meat thinly and add to hot broth to cook.",
-            "Serve with herbs, lime, and chili."
-        ],
-        "allergies": [],
-        "diets": [],
-        "ingredients": [
-            { "name": "Beef Broth", "quantity": "1.5L" },
-            { "name": "Rice Noodles", "quantity": "200g" },
-            { "name": "Beef Sirloin", "quantity": "200g" },
-            { "name": "Ginger", "quantity": "1 inch" },
-            { "name": "Cinnamon Stick", "quantity": "1" },
-            { "name": "Star Anise", "quantity": "2" },
-            { "name": "Fish Sauce", "quantity": "2 tbsp" },
-            { "name": "Lime", "quantity": "1" },
-            { "name": "Fresh Herbs", "quantity": "1 cup" },
-            { "name": "Chili", "quantity": "1" }
-        ],
-        "nutrition": {
-            "calories": 400,
-            "fat": "10g",
-            "carbs": "50g",
-            "protein": "25g"
+            "calories": {
+                "name": "Calories",
+                "amount": 400,
+                "unit": "kcal",
+                "percentageDailyNeeds": 20
+            },
+            "fat": {
+                "name": "Fat",
+                "amount": 10,
+                "unit": "g",
+                "percentageDailyNeeds": 15
+            },
+            "carbs": {
+                "name": "Carbohydrates",
+                "amount": 50,
+                "unit": "g",
+                "percentageDailyNeeds": 17
+            },
+            "protein": {
+                "name": "Protein",
+                "amount": 25,
+                "unit": "g",
+                "percentageDailyNeeds": 50
+            }
         }
     }
 ]
