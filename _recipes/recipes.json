@@ -3,17 +3,18 @@
         "id": "1",
         "title": "Spaghetti Carbonara",
         "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
-        "imagePath": "assets/images/spaghetti_carbonara.jpg",
-        "prepTime": "20",
+        "image": "assets/images/spaghetti_carbonara.jpg",
+        "preparationTime": "20",
         "servingSize": "2",
-        "category": "Italian",
+        "cuisine": "Italian",
+        "type": "Main Course",
         "steps": [
             "Boil the pasta.",
             "Cook the pancetta.",
             "Mix eggs and cheese.",
             "Combine pasta with pancetta and egg mixture."
         ],
-        "allergies": ["Eggs", "Dairy"],
+        "intolerances": ["Eggs", "Dairy"],
         "diets": ["Vegetarian"],
         "ingredients": [
             { "name": "Spaghetti", "quantity": "200g" },
@@ -47,23 +48,25 @@
                 "unit": "g",
                 "percentageDailyNeeds": 50
             }
-        }
+        },
+        "equipment": ["Pot", "Frying Pan", "Mixing Bowl", "Whisk"]
     },
     {
         "id": "2",
         "title": "Chicken Alfredo",
         "description": "Creamy Alfredo sauce with grilled chicken over fettuccine pasta.",
-        "imagePath": "assets/images/chicken_alfredo.jpg",
-        "prepTime": "30",
+        "image": "assets/images/chicken_alfredo.jpg",
+        "preparationTime": "30",
         "servingSize": "4",
-        "category": "Italian",
+        "cuisine": "Italian",
+        "type": "Main Course",
         "steps": [
             "Cook the pasta.",
             "Prepare the Alfredo sauce.",
             "Grill the chicken.",
             "Mix all together."
         ],
-        "allergies": [],
+        "intolerances": [],
         "diets": [],
         "ingredients": [
             { "name": "Fettuccine", "quantity": "400g" },
@@ -100,23 +103,25 @@
                 "unit": "g",
                 "percentageDailyNeeds": 50
             }
-        }
+        },
+        "equipment": ["Pot", "Pan", "Grill", "Mixing Bowl"]
     },
     {
         "id": "3",
         "title": "Pad Thai",
         "description": "A popular Thai stir-fried noodle dish with tofu, peanuts, and tamarind sauce.",
-        "imagePath": "assets/images/pad_thai.jpg",
-        "prepTime": "25",
+        "image": "assets/images/pad_thai.jpg",
+        "preparationTime": "25",
         "servingSize": "2",
-        "category": "Thai",
+        "cuisine": "Thai",
+        "type": "Main Course",
         "steps": [
             "Soak rice noodles in water.",
             "Prepare tofu and vegetables.",
             "Stir-fry with tamarind sauce and peanuts.",
             "Serve hot."
         ],
-        "allergies": ["Peanuts"],
+        "intolerances": ["Peanuts"],
         "diets": ["Vegetarian", "Vegan"],
         "ingredients": [
             { "name": "Rice Noodles", "quantity": "200g" },
@@ -155,23 +160,25 @@
                 "unit": "g",
                 "percentageDailyNeeds": 50
             }
-        }
+        },
+        "equipment": ["Bowl", "Frying Pan", "Knife", "Cutting Board"]
     },
     {
         "id": "4",
         "title": "Beef Burger",
         "description": "Classic American beef burger with lettuce, tomato, and cheese in a sesame seed bun.",
-        "imagePath": "assets/images/beef_burger.jpg",
-        "prepTime": "15",
+        "image": "assets/images/beef_burger.jpg",
+        "preparationTime": "15",
         "servingSize": "1",
-        "category": "American",
+        "cuisine": "American",
+        "type": "Main Course",
         "steps": [
             "Season ground beef with salt and pepper.",
             "Grill or pan-fry until cooked through.",
             "Assemble burger with lettuce, tomato, and cheese.",
             "Serve with fries."
         ],
-        "allergies": ["Dairy", "Gluten"],
+        "intolerances": ["Dairy", "Gluten"],
         "diets": [],
         "ingredients": [
             { "name": "Ground Beef", "quantity": "200g" },
@@ -207,23 +214,25 @@
                 "unit": "g",
                 "percentageDailyNeeds": 50
             }
-        }
+        },
+        "equipment": ["Grill", "Frying Pan", "Knife", "Cutting Board"]
     },
     {
         "id": "5",
         "title": "Margherita Pizza",
         "description": "Traditional Italian pizza with tomato sauce, mozzarella cheese, and fresh basil.",
-        "imagePath": "assets/images/margherita_pizza.jpg",
-        "prepTime": "18",
+        "image": "assets/images/margherita_pizza.jpg",
+        "preparationTime": "18",
         "servingSize": "1",
-        "category": "Italian",
+        "cuisine": "Italian",
+        "type": "Main Course",
         "steps": [
             "Roll out pizza dough.",
             "Spread tomato sauce evenly.",
             "Top with mozzarella cheese and fresh basil leaves.",
             "Bake in a preheated oven until crust is golden."
         ],
-        "allergies": ["Dairy", "Gluten"],
+        "intolerances": ["Dairy", "Gluten"],
         "diets": ["Vegetarian"],
         "ingredients": [
             { "name": "Pizza Dough", "quantity": "200g" },
@@ -256,23 +265,25 @@
                 "unit": "g",
                 "percentageDailyNeeds": 50
             }
-        }
+        },
+        "equipment": ["Oven", "Rolling Pin", "Baking Tray", "Knife"]
     },
     {
         "id": "6",
         "title": "Sushi Rolls",
         "description": "Japanese sushi rolls with sticky rice, seaweed, and various fillings like tuna and avocado.",
-        "imagePath": "assets/images/sushi_rolls.jpg",
-        "prepTime": "40",
+        "image": "assets/images/sushi_rolls.jpg",
+        "preparationTime": "40",
         "servingSize": "4",
-        "category": "Japanese",
+        "cuisine": "Japanese",
+        "type": "Main Course",
         "steps": [
             "Prepare sushi rice.",
             "Cut fillings (tuna, avocado, cucumber, etc.).",
             "Roll with seaweed and rice using a bamboo mat.",
             "Slice into pieces and serve with soy sauce."
         ],
-        "allergies": ["Fish"],
+        "intolerances": ["Fish"],
         "diets": [],
         "ingredients": [
             { "name": "Sushi Rice", "quantity": "300g" },
@@ -309,6 +320,7 @@
                 "unit": "g",
                 "percentageDailyNeeds": 50
             }
-        }
+        },
+        "equipment": ["Rice Cooker", "Knife", "Cutting Board", "Bamboo Mat"]
     }
 ]

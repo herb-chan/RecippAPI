@@ -159,6 +159,41 @@ recipp_app.get("/searchByIngredients", async (req, res) => {
 });
 
 /**
+ * Route to search for recipes excluding certain ingredients
+ * @name GET /searchByExcludedIngredients
+ * @function
+ * @memberof module:recipp_app
+ * @inner
+ * @async
+ * @param {object} req Express request object
+ * @param {object} res Express response object
+ */
+recipp_app.get("/searchByExcludedIngredients", async (req, res) => {
+    const ingredients = req.query.ingredients;
+    if (!ingredients) {
+        return res
+            .status(400)
+            .json({ message: "Ingredients query parameter is required" });
+    }
+
+    const ingredientArray = ingredients
+        .split(",")
+        .map((ing) => ing.trim().toLowerCase());
+
+    const recipes = await Recipe.findAll({
+        where: {
+            [Op.and]: ingredientArray.map((ingredient) => {
+                return literal(
+                    `NOT EXISTS (SELECT 1 FROM json_each(ingredients) WHERE json_each.value LIKE '%${ingredient}%')`
+                );
+            }),
+        },
+    });
+
+    res.json(recipes);
+});
+
+/**
  * Route to star a recipe
  * @name POST /recipes/:id/star
  * @function
