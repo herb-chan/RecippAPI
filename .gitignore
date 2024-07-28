@@ -1,8 +1,5 @@
 # Node modules
 node_modules/
 
-# Configuration files
-config/
-
 # VSCode settings
 .vscode/
