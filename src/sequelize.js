@@ -2,7 +2,7 @@ const { Sequelize } = require("sequelize");
 const path = require("path");
 
 // Construct the path to the database file
-const databasePath = path.join(__dirname, "database", "Recipes.sqlite");
+const databasePath = path.join(__dirname, "../database", "Recipes.sqlite");
 
 /**
  * Sequelize instance configured for the SQLite database.
@@ -11,6 +11,7 @@ const databasePath = path.join(__dirname, "database", "Recipes.sqlite");
 const sequelize = new Sequelize({
     dialect: "sqlite",
     storage: databasePath,
+    logging: false,
 });
 
 module.exports = sequelize;
