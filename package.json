@@ -1,6 +1,6 @@
 {
     "name": "recipp-api",
-    "version": "0.5.2",
+    "version": "0.5.3",
     "main": "app.js",
     "scripts": {
         "start": "nodemon src/app.js"
