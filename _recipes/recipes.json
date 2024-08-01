@@ -4,8 +4,10 @@
         "title": "Spaghetti Carbonara",
         "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
         "image": "assets/images/spaghetti_carbonara.jpg",
-        "preparationTime": "20",
-        "servingSize": "2",
+        "readyInTime": 30,
+        "cookingTime": 10,
+        "preparationTime": 20,
+        "servingSize": 2,
         "cuisine": "Italian",
         "type": "Main Course",
         "steps": [
@@ -26,27 +28,27 @@
         "nutrition": {
             "calories": {
                 "name": "Calories",
-                "amount": 400,
+                "amount": 700,
                 "unit": "kcal",
-                "percentageDailyNeeds": 20
+                "percentageDailyNeeds": 35
             },
             "fat": {
                 "name": "Fat",
-                "amount": 10,
+                "amount": 35,
                 "unit": "g",
-                "percentageDailyNeeds": 15
+                "percentageDailyNeeds": 54
             },
             "carbs": {
                 "name": "Carbohydrates",
-                "amount": 50,
+                "amount": 65,
                 "unit": "g",
-                "percentageDailyNeeds": 17
+                "percentageDailyNeeds": 22
             },
             "protein": {
                 "name": "Protein",
-                "amount": 25,
+                "amount": 30,
                 "unit": "g",
-                "percentageDailyNeeds": 50
+                "percentageDailyNeeds": 60
             }
         },
         "equipment": ["Pot", "Frying Pan", "Mixing Bowl", "Whisk"]
@@ -56,8 +58,10 @@
         "title": "Chicken Alfredo",
         "description": "Creamy Alfredo sauce with grilled chicken over fettuccine pasta.",
         "image": "assets/images/chicken_alfredo.jpg",
-        "preparationTime": "30",
-        "servingSize": "4",
+        "readyInTime": 45,
+        "cookingTime": 15,
+        "preparationTime": 30,
+        "servingSize": 4,
         "cuisine": "Italian",
         "type": "Main Course",
         "steps": [
@@ -81,27 +85,27 @@
         "nutrition": {
             "calories": {
                 "name": "Calories",
-                "amount": 400,
+                "amount": 850,
                 "unit": "kcal",
-                "percentageDailyNeeds": 20
+                "percentageDailyNeeds": 43
             },
             "fat": {
                 "name": "Fat",
-                "amount": 10,
+                "amount": 45,
                 "unit": "g",
-                "percentageDailyNeeds": 15
+                "percentageDailyNeeds": 69
             },
             "carbs": {
                 "name": "Carbohydrates",
-                "amount": 50,
+                "amount": 70,
                 "unit": "g",
-                "percentageDailyNeeds": 17
+                "percentageDailyNeeds": 23
             },
             "protein": {
                 "name": "Protein",
-                "amount": 25,
+                "amount": 45,
                 "unit": "g",
-                "percentageDailyNeeds": 50
+                "percentageDailyNeeds": 90
             }
         },
         "equipment": ["Pot", "Pan", "Grill", "Mixing Bowl"]
@@ -111,8 +115,10 @@
         "title": "Pad Thai",
         "description": "A popular Thai stir-fried noodle dish with tofu, peanuts, and tamarind sauce.",
         "image": "assets/images/pad_thai.jpg",
-        "preparationTime": "25",
-        "servingSize": "2",
+        "readyInTime": 30,
+        "cookingTime": 5,
+        "preparationTime": 25,
+        "servingSize": 2,
         "cuisine": "Thai",
         "type": "Main Course",
         "steps": [
@@ -138,21 +144,21 @@
         "nutrition": {
             "calories": {
                 "name": "Calories",
-                "amount": 400,
+                "amount": 600,
                 "unit": "kcal",
-                "percentageDailyNeeds": 20
+                "percentageDailyNeeds": 30
             },
             "fat": {
                 "name": "Fat",
-                "amount": 10,
+                "amount": 25,
                 "unit": "g",
-                "percentageDailyNeeds": 15
+                "percentageDailyNeeds": 38
             },
             "carbs": {
                 "name": "Carbohydrates",
-                "amount": 50,
+                "amount": 70,
                 "unit": "g",
-                "percentageDailyNeeds": 17
+                "percentageDailyNeeds": 23
             },
             "protein": {
                 "name": "Protein",
@@ -168,8 +174,10 @@
         "title": "Beef Burger",
         "description": "Classic American beef burger with lettuce, tomato, and cheese in a sesame seed bun.",
         "image": "assets/images/beef_burger.jpg",
-        "preparationTime": "15",
-        "servingSize": "1",
+        "readyInTime": 20,
+        "cookingTime": 5,
+        "preparationTime": 15,
+        "servingSize": 1,
         "cuisine": "American",
         "type": "Main Course",
         "steps": [
@@ -192,15 +200,15 @@
         "nutrition": {
             "calories": {
                 "name": "Calories",
-                "amount": 400,
+                "amount": 700,
                 "unit": "kcal",
-                "percentageDailyNeeds": 20
+                "percentageDailyNeeds": 35
             },
             "fat": {
                 "name": "Fat",
-                "amount": 10,
+                "amount": 40,
                 "unit": "g",
-                "percentageDailyNeeds": 15
+                "percentageDailyNeeds": 62
             },
             "carbs": {
                 "name": "Carbohydrates",
@@ -210,9 +218,9 @@
             },
             "protein": {
                 "name": "Protein",
-                "amount": 25,
+                "amount": 35,
                 "unit": "g",
-                "percentageDailyNeeds": 50
+                "percentageDailyNeeds": 70
             }
         },
         "equipment": ["Grill", "Frying Pan", "Knife", "Cutting Board"]
@@ -222,8 +230,10 @@
         "title": "Margherita Pizza",
         "description": "Traditional Italian pizza with tomato sauce, mozzarella cheese, and fresh basil.",
         "image": "assets/images/margherita_pizza.jpg",
-        "preparationTime": "18",
-        "servingSize": "1",
+        "readyInTime": 28,
+        "cookingTime": 10,
+        "preparationTime": 18,
+        "servingSize": 1,
         "cuisine": "Italian",
         "type": "Main Course",
         "steps": [
@@ -243,27 +253,27 @@
         "nutrition": {
             "calories": {
                 "name": "Calories",
-                "amount": 400,
+                "amount": 800,
                 "unit": "kcal",
-                "percentageDailyNeeds": 20
+                "percentageDailyNeeds": 40
             },
             "fat": {
                 "name": "Fat",
-                "amount": 10,
+                "amount": 35,
                 "unit": "g",
-                "percentageDailyNeeds": 15
+                "percentageDailyNeeds": 54
             },
             "carbs": {
                 "name": "Carbohydrates",
-                "amount": 50,
+                "amount": 90,
                 "unit": "g",
-                "percentageDailyNeeds": 17
+                "percentageDailyNeeds": 30
             },
             "protein": {
                 "name": "Protein",
-                "amount": 25,
+                "amount": 30,
                 "unit": "g",
-                "percentageDailyNeeds": 50
+                "percentageDailyNeeds": 60
             }
         },
         "equipment": ["Oven", "Rolling Pin", "Baking Tray", "Knife"]
@@ -273,8 +283,10 @@
         "title": "Sushi Rolls",
         "description": "Japanese sushi rolls with sticky rice, seaweed, and various fillings like tuna and avocado.",
         "image": "assets/images/sushi_rolls.jpg",
-        "preparationTime": "40",
-        "servingSize": "4",
+        "readyInTime": 60,
+        "cookingTime": 20,
+        "preparationTime": 40,
+        "servingSize": 4,
         "cuisine": "Japanese",
         "type": "Main Course",
         "steps": [
@@ -298,27 +310,27 @@
         "nutrition": {
             "calories": {
                 "name": "Calories",
-                "amount": 400,
+                "amount": 500,
                 "unit": "kcal",
-                "percentageDailyNeeds": 20
+                "percentageDailyNeeds": 25
             },
             "fat": {
                 "name": "Fat",
-                "amount": 10,
+                "amount": 15,
                 "unit": "g",
-                "percentageDailyNeeds": 15
+                "percentageDailyNeeds": 23
             },
             "carbs": {
                 "name": "Carbohydrates",
-                "amount": 50,
+                "amount": 60,
                 "unit": "g",
-                "percentageDailyNeeds": 17
+                "percentageDailyNeeds": 20
             },
             "protein": {
                 "name": "Protein",
-                "amount": 25,
+                "amount": 20,
                 "unit": "g",
-                "percentageDailyNeeds": 50
+                "percentageDailyNeeds": 40
             }
         },
         "equipment": ["Rice Cooker", "Knife", "Cutting Board", "Bamboo Mat"]

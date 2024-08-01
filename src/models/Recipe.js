@@ -7,6 +7,8 @@ const sequelize = require("../sequelize");
  * @property {string} title The title of the recipe.
  * @property {string} description A brief description of the recipe.
  * @property {string} image The file path to an image representing the recipe.
+ * @property {number} readyInTime The total time required to prepare the recipe, including cooking and preparation time, in minutes.
+ * @property {number} cookingTime The time required to cook the recipe in minutes.
  * @property {number} preparationTime The time required to prepare the recipe in minutes.
  * @property {number} servingSize The number of servings the recipe yields.
  * @property {string} cuisine The cuisine of the dish (e.g., Chinese, Italian).
@@ -35,6 +37,14 @@ const Recipe = sequelize.define("Recipe", {
     },
     image: {
         type: DataTypes.STRING,
+        allowNull: false,
+    },
+    readyInTime: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
+    cookingTime: {
+        type: DataTypes.INTEGER,
         allowNull: false,
     },
     preparationTime: {

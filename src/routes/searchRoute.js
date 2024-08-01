@@ -47,6 +47,8 @@ router.get("/complexSearch", async (req, res) => {
         ingredients,
         excludedIngredients,
         type,
+        maxReadyInTime,
+        maxCookingTime,
         maxPreparationTime,
         minServings,
         maxServings,
@@ -157,6 +159,22 @@ router.get("/complexSearch", async (req, res) => {
         whereConditions.push({
             type: {
                 [Op.like]: `%${type}%`,
+            },
+        });
+    }
+
+    if (maxReadyInTime) {
+        whereConditions.push({
+            readyInTime: {
+                [Op.lte]: maxReadyInTime,
+            },
+        });
+    }
+
+    if (maxCookingTime) {
+        whereConditions.push({
+            cookingTime: {
+                [Op.lte]: maxCookingTime,
             },
         });
     }

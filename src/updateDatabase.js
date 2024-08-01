@@ -4,7 +4,7 @@ const Recipe = require("./models/Recipe");
 const fs = require("fs");
 const path = require("path");
 
-const recipesFilePath = path.join(__dirname, "_recipes/recipes.json");
+const recipesFilePath = path.join(__dirname, "../_recipes/recipes.json");
 
 /**
  * Reads recipes from the JSON file.
