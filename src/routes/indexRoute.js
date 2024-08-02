@@ -11,7 +11,9 @@ const router = express.Router();
  * @param {object} res Express response object
  */
 router.get("/", (req, res) => {
-    res.send("Hello, Recipp API!");
+    res.send(
+        "For more informations about RecippAPI see: https://www.github.com/herb-chan/RecippAPI"
+    );
 });
 
 module.exports = router;
