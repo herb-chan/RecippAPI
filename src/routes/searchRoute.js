@@ -4,6 +4,10 @@ const Recipe = require("../models/Recipe");
 
 const router = express.Router();
 
+const capitalizeWords = (str) => {
+    return str.replace(/\b\w/g, (char) => char.toUpperCase());
+};
+
 /**
  * Route to search for recipes by title
  * @name GET /search
@@ -307,6 +311,7 @@ router.get("/complexSearch", async (req, res) => {
  */
 router.get("/searchByIngredients", async (req, res) => {
     const ingredients = req.query.ingredients;
+
     if (!ingredients) {
         return res
             .status(400)
@@ -316,19 +321,78 @@ router.get("/searchByIngredients", async (req, res) => {
     const ingredientArray = ingredients
         .split(",")
         .map((ing) => ing.trim().toLowerCase());
+    const matchAll = req.query.matchAll === "true" ? true : false;
 
     try {
-        const recipes = await Recipe.findAll({
-            where: {
-                [Op.and]: ingredientArray.map((ingredient) => {
-                    return literal(
-                        `EXISTS (SELECT 1 FROM json_each(ingredients) WHERE json_each.value LIKE '%${ingredient}%')`
-                    );
-                }),
-            },
-        });
+        if (matchAll) {
+            const recipes = await Recipe.findAll({
+                where: {
+                    [Op.and]: ingredientArray.map((ingredient) => {
+                        return literal(
+                            `EXISTS (SELECT 1 FROM json_each(ingredients) WHERE json_each.value LIKE '%${ingredient}%')`
+                        );
+                    }),
+                },
+            });
 
-        res.json(recipes);
+            res.json(recipes);
+        } else {
+            const recipes = await Recipe.findAll({
+                where: {
+                    [Op.or]: ingredientArray.map((ingredient) => {
+                        return literal(
+                            `EXISTS (SELECT 1 FROM json_each(ingredients) WHERE json_each.value LIKE '%${ingredient}%')`
+                        );
+                    }),
+                },
+            });
+
+            const response = recipes.map((recipe) => {
+                const recipeIngredients = recipe.ingredients.map((ing) =>
+                    ing.name.toLowerCase()
+                );
+
+                const missingIngredients = recipeIngredients.filter((ing) => {
+                    return !ingredientArray.some((specifiedIng) =>
+                        ing.includes(specifiedIng)
+                    );
+                });
+
+                const extraIngredients = ingredientArray.filter((ing) => {
+                    return !recipeIngredients.some((recipeIng) =>
+                        recipeIng.includes(ing)
+                    );
+                });
+
+                const updatedIngredients = recipe.ingredients.map((ing) => {
+                    const similar = ingredientArray.find(
+                        (specifiedIng) =>
+                            ing.name.toLowerCase().includes(specifiedIng) &&
+                            ing.name.toLowerCase() !== specifiedIng
+                    );
+                    return similar
+                        ? {
+                              ...ing,
+                              name: capitalizeWords(ing.name),
+                              replacement: capitalizeWords(similar),
+                          }
+                        : { ...ing, name: capitalizeWords(ing.name) };
+                });
+
+                return {
+                    ...recipe.toJSON(),
+                    ingredients: updatedIngredients,
+                    missingIngredients: missingIngredients
+                        .map(capitalizeWords)
+                        .sort(),
+                    extraIngredients: extraIngredients
+                        .map(capitalizeWords)
+                        .sort(),
+                };
+            });
+
+            res.json(response);
+        }
     } catch (error) {
         res.status(500).json({
             message: "An error occurred while searching for recipes",
