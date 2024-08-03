@@ -1,9 +1,10 @@
 {
     "name": "recipp-api",
-    "version": "0.5.7",
+    "version": "0.5.8",
     "main": "app.js",
     "scripts": {
-        "start": "nodemon src/app.js"
+        "start": "nodemon src/app.js",
+        "update": "node src/updateDatabase.js"
     },
     "keywords": [],
     "author": "herb",

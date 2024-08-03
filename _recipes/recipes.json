@@ -19,11 +19,17 @@
         "intolerances": ["Eggs", "Dairy"],
         "diets": ["Vegetarian"],
         "ingredients": [
-            { "name": "Spaghetti", "quantity": "200g" },
-            { "name": "Pancetta", "quantity": "100g" },
-            { "name": "Eggs", "quantity": "2" },
-            { "name": "Parmesan Cheese", "quantity": "50g" },
-            { "name": "Black Pepper", "quantity": "to taste" }
+            { "name": "Spaghetti", "quantity": { "amount": 200, "unit": "g" } },
+            { "name": "Pancetta", "quantity": { "amount": 100, "unit": "g" } },
+            { "name": "Eggs", "quantity": { "amount": 2, "unit": "" } },
+            {
+                "name": "Parmesan Cheese",
+                "quantity": { "amount": 50, "unit": "g" }
+            },
+            {
+                "name": "Black Pepper",
+                "quantity": { "amount": "to taste", "unit": "" }
+            }
         ],
         "nutrition": {
             "calories": {
@@ -73,14 +79,32 @@
         "intolerances": [],
         "diets": [],
         "ingredients": [
-            { "name": "Fettuccine", "quantity": "400g" },
-            { "name": "Chicken Breast", "quantity": "2" },
-            { "name": "Heavy Cream", "quantity": "1 cup" },
-            { "name": "Parmesan Cheese", "quantity": "100g" },
-            { "name": "Butter", "quantity": "50g" },
-            { "name": "Garlic", "quantity": "2 cloves" },
-            { "name": "Salt", "quantity": "to taste" },
-            { "name": "Pepper", "quantity": "to taste" }
+            {
+                "name": "Fettuccine",
+                "quantity": { "amount": 400, "unit": "g" }
+            },
+            {
+                "name": "Chicken Breast",
+                "quantity": { "amount": 2, "unit": "" }
+            },
+            {
+                "name": "Heavy Cream",
+                "quantity": { "amount": 1, "unit": "cup" }
+            },
+            {
+                "name": "Parmesan Cheese",
+                "quantity": { "amount": 100, "unit": "g" }
+            },
+            { "name": "Butter", "quantity": { "amount": 50, "unit": "g" } },
+            { "name": "Garlic", "quantity": { "amount": 2, "unit": "cloves" } },
+            {
+                "name": "Salt",
+                "quantity": { "amount": "to taste", "unit": "" }
+            },
+            {
+                "name": "Pepper",
+                "quantity": { "amount": "to taste", "unit": "" }
+            }
         ],
         "nutrition": {
             "calories": {
@@ -130,16 +154,31 @@
         "intolerances": ["Peanuts"],
         "diets": ["Vegetarian", "Vegan"],
         "ingredients": [
-            { "name": "Rice Noodles", "quantity": "200g" },
-            { "name": "Tofu", "quantity": "150g" },
-            { "name": "Peanuts", "quantity": "50g" },
-            { "name": "Tamarind Paste", "quantity": "2 tbsp" },
-            { "name": "Soy Sauce", "quantity": "2 tbsp" },
-            { "name": "Bean Sprouts", "quantity": "100g" },
-            { "name": "Garlic", "quantity": "2 cloves" },
-            { "name": "Vegetable Oil", "quantity": "2 tbsp" },
-            { "name": "Lime", "quantity": "1" },
-            { "name": "Green Onions", "quantity": "2" }
+            {
+                "name": "Rice Noodles",
+                "quantity": { "amount": 200, "unit": "g" }
+            },
+            { "name": "Tofu", "quantity": { "amount": 150, "unit": "g" } },
+            { "name": "Peanuts", "quantity": { "amount": 50, "unit": "g" } },
+            {
+                "name": "Tamarind Paste",
+                "quantity": { "amount": 2, "unit": "tbsp" }
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": { "amount": 2, "unit": "tbsp" }
+            },
+            {
+                "name": "Bean Sprouts",
+                "quantity": { "amount": 100, "unit": "g" }
+            },
+            { "name": "Garlic", "quantity": { "amount": 2, "unit": "cloves" } },
+            {
+                "name": "Vegetable Oil",
+                "quantity": { "amount": 2, "unit": "tbsp" }
+            },
+            { "name": "Lime", "quantity": { "amount": 1, "unit": "" } },
+            { "name": "Green Onions", "quantity": { "amount": 2, "unit": "" } }
         ],
         "nutrition": {
             "calories": {
@@ -189,13 +228,31 @@
         "intolerances": ["Dairy", "Gluten"],
         "diets": [],
         "ingredients": [
-            { "name": "Ground Beef", "quantity": "200g" },
-            { "name": "Lettuce", "quantity": "2 leaves" },
-            { "name": "Tomato", "quantity": "1 slice" },
-            { "name": "Cheddar Cheese", "quantity": "1 slice" },
-            { "name": "Sesame Seed Bun", "quantity": "1" },
-            { "name": "Salt", "quantity": "to taste" },
-            { "name": "Pepper", "quantity": "to taste" }
+            {
+                "name": "Ground Beef",
+                "quantity": { "amount": 200, "unit": "g" }
+            },
+            {
+                "name": "Lettuce",
+                "quantity": { "amount": 2, "unit": "leaves" }
+            },
+            { "name": "Tomato", "quantity": { "amount": 1, "unit": "slice" } },
+            {
+                "name": "Cheddar Cheese",
+                "quantity": { "amount": 1, "unit": "slice" }
+            },
+            {
+                "name": "Sesame Seed Bun",
+                "quantity": { "amount": 1, "unit": "" }
+            },
+            {
+                "name": "Salt",
+                "quantity": { "amount": "to taste", "unit": "" }
+            },
+            {
+                "name": "Pepper",
+                "quantity": { "amount": "to taste", "unit": "" }
+            }
         ],
         "nutrition": {
             "calories": {
@@ -245,10 +302,22 @@
         "intolerances": ["Dairy", "Gluten"],
         "diets": ["Vegetarian"],
         "ingredients": [
-            { "name": "Pizza Dough", "quantity": "200g" },
-            { "name": "Tomato Sauce", "quantity": "100g" },
-            { "name": "Mozzarella Cheese", "quantity": "100g" },
-            { "name": "Fresh Basil", "quantity": "5 leaves" }
+            {
+                "name": "Pizza Dough",
+                "quantity": { "amount": 200, "unit": "g" }
+            },
+            {
+                "name": "Tomato Sauce",
+                "quantity": { "amount": 100, "unit": "g" }
+            },
+            {
+                "name": "Mozzarella Cheese",
+                "quantity": { "amount": 100, "unit": "g" }
+            },
+            {
+                "name": "Fresh Basil",
+                "quantity": { "amount": 5, "unit": "leaves" }
+            }
         ],
         "nutrition": {
             "calories": {
@@ -298,14 +367,29 @@
         "intolerances": ["Fish"],
         "diets": [],
         "ingredients": [
-            { "name": "Sushi Rice", "quantity": "300g" },
-            { "name": "Nori (Seaweed)", "quantity": "4 sheets" },
-            { "name": "Tuna", "quantity": "200g" },
-            { "name": "Avocado", "quantity": "1" },
-            { "name": "Cucumber", "quantity": "1" },
-            { "name": "Soy Sauce", "quantity": "to taste" },
-            { "name": "Wasabi", "quantity": "to taste" },
-            { "name": "Pickled Ginger", "quantity": "to taste" }
+            {
+                "name": "Sushi Rice",
+                "quantity": { "amount": 300, "unit": "g" }
+            },
+            {
+                "name": "Nori (Seaweed)",
+                "quantity": { "amount": 4, "unit": "sheets" }
+            },
+            { "name": "Tuna", "quantity": { "amount": 200, "unit": "g" } },
+            { "name": "Avocado", "quantity": { "amount": 1, "unit": "" } },
+            { "name": "Cucumber", "quantity": { "amount": 1, "unit": "" } },
+            {
+                "name": "Soy Sauce",
+                "quantity": { "amount": "to taste", "unit": "" }
+            },
+            {
+                "name": "Wasabi",
+                "quantity": { "amount": "to taste", "unit": "" }
+            },
+            {
+                "name": "Pickled Ginger",
+                "quantity": { "amount": "to taste", "unit": "" }
+            }
         ],
         "nutrition": {
             "calories": {
