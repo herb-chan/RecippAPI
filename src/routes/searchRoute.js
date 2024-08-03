@@ -2,6 +2,8 @@ const express = require("express");
 const { Op, literal } = require("sequelize");
 const Recipe = require("../models/Recipe");
 
+const config = require("../config/config");
+
 const router = express.Router();
 
 const capitalizeWords = (str) => {
@@ -19,13 +21,15 @@ const capitalizeWords = (str) => {
  * @param {object} res Express response object
  */
 router.get("/search", async (req, res) => {
-    const query = req.query.q;
+    const query = req.query.query;
+    const amount = req.query.amount;
     const recipes = await Recipe.findAll({
         where: {
             title: {
                 [Op.like]: `%${query}%`,
             },
         },
+        limit: amount ? parseInt(amount, 10) : config.recipe_amount,
     });
     res.json(recipes);
 });
@@ -64,6 +68,7 @@ router.get("/complexSearch", async (req, res) => {
         maxCarbs,
         minProtein,
         maxProtein,
+        amount,
     } = req.query;
 
     const whereConditions = [];
@@ -288,6 +293,7 @@ router.get("/complexSearch", async (req, res) => {
             where: {
                 [Op.and]: whereConditions,
             },
+            limit: amount ? parseInt(amount, 10) : config.recipe_amount,
         });
 
         res.json(recipes);
@@ -311,6 +317,7 @@ router.get("/complexSearch", async (req, res) => {
  */
 router.get("/searchByIngredients", async (req, res) => {
     const ingredients = req.query.ingredients;
+    const amount = req.query.amount;
 
     if (!ingredients) {
         return res
@@ -333,6 +340,7 @@ router.get("/searchByIngredients", async (req, res) => {
                         );
                     }),
                 },
+                limit: amount ? parseInt(amount, 10) : config.recipe_amount,
             });
 
             res.json(recipes);
@@ -345,6 +353,7 @@ router.get("/searchByIngredients", async (req, res) => {
                         );
                     }),
                 },
+                limit: amount ? parseInt(amount, 10) : config.recipe_amount,
             });
 
             const response = recipes.map((recipe) => {
@@ -413,6 +422,8 @@ router.get("/searchByIngredients", async (req, res) => {
  */
 router.get("/searchByExcludedIngredients", async (req, res) => {
     const ingredients = req.query.ingredients;
+    const amount = req.query.amount;
+
     if (!ingredients) {
         return res
             .status(400)
@@ -431,6 +442,7 @@ router.get("/searchByExcludedIngredients", async (req, res) => {
                 );
             }),
         },
+        limit: amount ? parseInt(amount, 10) : config.recipe_amount,
     });
 
     res.json(recipes);

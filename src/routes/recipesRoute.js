@@ -255,7 +255,7 @@ router.get("/recipes/:id/similar", async (req, res) => {
                 cuisine: recipe.cuisine,
                 id: { [Op.ne]: id },
             },
-            limit: amount ? parseInt(amount, 10) : undefined,
+            limit: amount ? parseInt(amount, 10) : config.recipe_amount,
         });
 
         res.json(similarRecipes);
