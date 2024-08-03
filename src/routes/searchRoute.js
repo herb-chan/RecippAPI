@@ -448,4 +448,114 @@ router.get("/searchByExcludedIngredients", async (req, res) => {
     res.json(recipes);
 });
 
+/**
+ * Route to search for recipes by nutrients
+ * @name GET /searchByNutrients
+ * @function
+ * @memberof module:recipp_app
+ * @inner
+ * @async
+ * @param {object} req Express request object
+ * @param {object} res Express response object
+ */
+router.get("/searchByNutrients", async (req, res) => {
+    const {
+        minCalories,
+        maxCalories,
+        minFat,
+        maxFat,
+        minCarbs,
+        maxCarbs,
+        minProtein,
+        maxProtein,
+        amount,
+    } = req.query;
+
+    const nutritionConditions = [];
+
+    if (
+        minCalories ||
+        maxCalories ||
+        minFat ||
+        maxFat ||
+        minCarbs ||
+        maxCarbs ||
+        minProtein ||
+        maxProtein
+    ) {
+        if (minCalories) {
+            nutritionConditions.push(
+                literal(
+                    `(json_extract(nutrition, '$.calories.amount') >= ${minCalories})`
+                )
+            );
+        }
+        if (maxCalories) {
+            nutritionConditions.push(
+                literal(
+                    `(json_extract(nutrition, '$.calories.amount') <= ${maxCalories})`
+                )
+            );
+        }
+        if (minFat) {
+            nutritionConditions.push(
+                literal(
+                    `(json_extract(nutrition, '$.fat.amount') >= ${minFat})`
+                )
+            );
+        }
+        if (maxFat) {
+            nutritionConditions.push(
+                literal(
+                    `(json_extract(nutrition, '$.fat.amount') <= ${maxFat})`
+                )
+            );
+        }
+        if (minCarbs) {
+            nutritionConditions.push(
+                literal(
+                    `(json_extract(nutrition, '$.carbs.amount') >= ${minCarbs})`
+                )
+            );
+        }
+        if (maxCarbs) {
+            nutritionConditions.push(
+                literal(
+                    `(json_extract(nutrition, '$.carbs.amount') <= ${maxCarbs})`
+                )
+            );
+        }
+        if (minProtein) {
+            nutritionConditions.push(
+                literal(
+                    `(json_extract(nutrition, '$.protein.amount') >= ${minProtein})`
+                )
+            );
+        }
+        if (maxProtein) {
+            nutritionConditions.push(
+                literal(
+                    `(json_extract(nutrition, '$.protein.amount') <= ${maxProtein})`
+                )
+            );
+        }
+    }
+
+    try {
+        const recipes = await Recipe.findAll({
+            where: {
+                [Op.and]: nutritionConditions,
+            },
+            limit: amount ? parseInt(amount, 10) : config.recipe_amount,
+        });
+
+        res.json(recipes);
+    } catch (error) {
+        console.error("Error during search:", error);
+        res.status(500).json({
+            error: "An error occurred while performing the search.",
+        });
+    }
+});
+
 module.exports = router;
